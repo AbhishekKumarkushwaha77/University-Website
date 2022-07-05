@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> University Website Design - Expert Academy </title>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://use.fontawesome.com/32738c61e4.js"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <span id="college-Name">EduExpert</span>
+            <a href="index.html"><img src="image/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!------------------about us content--------------------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest University</h1>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus eius repellendus rem vitae. Aut
+                    totam ipsa illo deserunt consectetur exercitationem fuga tenetur nemo reprehenderit asperiores,
+                    minima, dignissimos doloribus, saepe quibusdam!
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="image/about.jpg">
+            </div>
+        </div>
+
+    </section>
+    <!-----------------------footer---------------------->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero minus aliquam iste culpa aspernatur fuga
+            magni,commodi ullam <br> maiores blanditiis consequatur quam ducimus doloribus, sequi, illum nemo mollitia
+            tempore temporibus.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Expert Academy Tutorials</p>
+    </section>
+
+    <!--------------- js --------------->
+    <script>
+        var navLinks = document.getElementById( "navLinks" );
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>
